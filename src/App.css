@@ -1,38 +1,85 @@
-.App {
+body {
+  max-width: 400px;
+  color: #144054;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.App {
+  font-family: "Cutive Mono", monospace;
+  color: #3b3b3d;
+  background: radial-gradient(
+    circle at 18.7% 37.8%,
+    rgb(250, 250, 250) 0%,
+    rgb(225, 234, 238) 90%
+  );
+  text-align: center;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 10px;
+  border: #949597 1px solid;
+  overflow: hidden;
+  width: 500px;
+  height: fit-content;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h1,
+h2,
+h3 {
+  line-height: 15px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.mainIcon {
+  display: block;
+  top: 0;
+  left: 430px;
+  position: fixed;
+  padding: 0;
 }
 
-.App-link {
-  color: #61dafb;
+.forecastGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.weatherCurrently {
+  font-size: 16px;
+  text-transform: capitalize;
+  color: #144054;
+}
+
+.currently {
+  font-size: 16px;
+  text-align: left;
+  color: #144054;
+}
+
+.conditions {
+  font-size: 12px;
+  color: #144054;
+  text-align: left;
+  position: absolute;
+  top: 0;
+}
+
+.forecastIcon {
+  width: 100px;
+}
+
+.searchCity {
+  padding: 10px;
+  display: inline-block;
+  margin-top: 20px;
+}
+
+footer {
+  font-size: 10px;
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+  text-decoration: none;
+  color: #144054;
+  cursor: crosshair;
 }
